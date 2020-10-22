@@ -3,4 +3,4 @@ title: Home
 date: 2020-10-21T09:38:19-06:00
 ---
 
-Hi there, thanks for having a look :)
+Writings and ramblings of Kevin Maris.
