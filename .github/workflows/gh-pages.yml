@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout hugo website
         uses: actions/checkout@v2
+        with:
+          submodules: true
       - name: Clone pages repo
         uses: actions/checkout@v2
         with:
