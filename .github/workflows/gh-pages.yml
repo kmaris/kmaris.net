@@ -17,11 +17,12 @@ jobs:
           repository: kmaris/kmaris.github.io
           path: public
           ssh-key: ${{ secrets.GHPAGES_DEPLOY_KEY }}
-      - run: rm -rf public/*
+      - run: "[[ -d public ]] && rm -rf public/*"
       - run: docker run --rm -i -v $(pwd):/src klakegg/hugo:latest
       - run: |
           git config --global user.name github-actions
           git config --global user.email github-actions@github.com
-          git -C public add .
-          git -C public commit -m 'Built by gh-actions'
-          git -C public push
+          git add -N .
+          git diff --exit-code || ( \
+          git -C public commit -m 'Built by gh-actions from kmaris/kmaris.net' ; \
+          git -C public push )
