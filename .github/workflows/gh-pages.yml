@@ -9,7 +9,19 @@ jobs:
   pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout hugo website
+        uses: actions/checkout@v2
+      - name: Clone pages repo
+        uses: actions/checkout@v2
         with:
-          submodules: true
-      - run: docker run --rm -it -v $(pwd):/src klakegg/hugo:latest
+          repository: kmaris/kmaris.github.io
+          path: public
+          ssh-key: ${{ secrets.GHPAGES_DEPLOY_KEY }}
+      - run: rm -rf public/*
+      - run: docker run --rm -i -v $(pwd):/src klakegg/hugo:latest
+      - run: |
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
+          git -C public add .
+          git -C public commit -m 'Built by gh-actions'
+          git -C public push
