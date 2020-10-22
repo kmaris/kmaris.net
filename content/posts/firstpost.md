@@ -5,7 +5,6 @@ categories:
   - tech
 tags:
   - tea
-draft: true
 ---
 
 We'll see how long I keep this up, but it is something I've needed to do for

@@ -1,7 +1,6 @@
 ---
 title: About
 date: 2020-10-21T09:39:51-06:00
-draft: true
 ---
 
 Kevin Maris, a sneaky-nice guy according to those who know me. Find me running
