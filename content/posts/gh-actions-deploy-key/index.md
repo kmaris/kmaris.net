@@ -69,7 +69,7 @@ source repo make a workflow (I call mine gh-pages.yml) at
 
 {{< readfile file="/content/posts/gh-actions-deploy-key/gh-pages.yml" highlight="yaml" >}}
 
-By doing a `git add -N .` before `git diff` we can have diff pay attention to
+By doing a `git add --intent-to-add .` before `git diff` we can have diff pay attention to
 any new, untracked files. And if there are diffs, commit and push the new
 content!
 
