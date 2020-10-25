@@ -22,7 +22,7 @@ jobs:
       - name: Build website
         run: docker run --rm -i -v $(pwd):/src klakegg/hugo:latest --cleanDestinationDir=true
       - name: Set website build commit message
-        run: echo "COMMIT_MSG='$(git log -1 --pretty=reference)'" >> $GITHUB_ENV
+        run: echo "COMMIT_MSG=$(git log -1 --pretty=reference)" >> $GITHUB_ENV
       - name: Commit built website
         run: |
           cd public
