@@ -39,3 +39,6 @@ url = "index.xml"
 
 [markup.goldmark.renderer]
 unsafe = true
+
+[markup.highlight]
+style = "tango"
