@@ -19,8 +19,7 @@ jobs:
           repository: kmaris/kmaris.github.io
           path: public
           ssh-key: ${{ secrets.GHPAGES_DEPLOY_KEY }}
-      - run: rm -rf public/*
-      - run: docker run --rm -i -v $(pwd):/src klakegg/hugo:latest
+      - run: docker run --rm -i -v $(pwd):/src klakegg/hugo:latest --cleanDestinationDir=true
       - run: |
           cd public
           git config user.name github-actions
