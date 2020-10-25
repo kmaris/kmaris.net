@@ -16,9 +16,8 @@ nice fit.
 There are two primary repositories I'm using to make this website. First is
 the [project source repository][5] containing markdown files, static assets,
 submodule refs to [my fork][3] of the [hugo-xmin][2] theme, and so on. Second is
-the main [Github Pages repository] that is used as the root resource for
-[https://kmaris.github.io](https://kmaris.github.io). (I use a custom domain
-instead but I'll defer talking about that.)
+the main [Github Pages repository](https://github.com/kmaris/kmaris.github.io)
+that is used as the root resource for [https://kmaris.net](https://kmaris.net).
 
 So, what do we need to do? The goal is to get the content from the
 main project source repository, render it through hugo, and published into the
@@ -65,8 +64,8 @@ and a Secret in the source repo from the private key:
 
 By using the deploy key to do the checkout, the action runner will have the
 permissions to do the push and we don't have to tinker with tokens. In your
-source repo make a workflow (I call mine gh-pages.yml) at 
-.github/webhooks/gh-pages.yml and in it you'll have the following:
+source repo make a workflow (I call mine gh-pages.yml) at
+`.github/webhooks/gh-pages.yml` and in it you'll have the following:
 
 {{< readfile file="/content/posts/gh-actions-deploy-key/gh-pages.yml" highlight="yaml" >}}
 

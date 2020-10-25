@@ -19,13 +19,17 @@ jobs:
           repository: kmaris/kmaris.github.io
           path: public
           ssh-key: ${{ secrets.GHPAGES_DEPLOY_KEY }}
-      - run: docker run --rm -i -v $(pwd):/src klakegg/hugo:latest --cleanDestinationDir=true
-      - run: |
+      - name: Build website
+        run: docker run --rm -i -v $(pwd):/src klakegg/hugo:latest --cleanDestinationDir=true
+      - name: Set website build commit message
+        run: echo "COMMIT_MSG='$(git log -1 --pretty=reference)'" >> $GITHUB_ENV
+      - name: Commit built website
+        run: |
           cd public
-          git config user.name github-actions
-          git config user.email github-actions@github.com
           git add -N .
           if ! git diff --quiet ; then
-            git commit -a -m 'Built by gh-actions from kmaris/kmaris.net'
+            git config user.name github-actions
+            git config user.email github-actions@github.com
+            git commit -a -m "${{ env.COMMIT_MSG }}"
             git push
           fi
