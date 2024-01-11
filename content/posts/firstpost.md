@@ -1,8 +1,6 @@
 ---
-title: "Back to it"
+title: "Tea titbit"
 date: 2020-10-21T10:15:37-06:00
-categories:
-  - tech
 tags:
   - tea
 ---
