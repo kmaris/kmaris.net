@@ -12,11 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout hugo website
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           submodules: true
       - name: Checkout pages repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: kmaris/kmaris.github.io
           path: public
