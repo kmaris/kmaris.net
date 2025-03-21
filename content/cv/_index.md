@@ -7,7 +7,7 @@ Software \& Infrastructure Developer in Boulder, CO
 
 ##### About
 
-Looking for opportunities to automate-all-the-things, fix and enhance your slow
+I am open to opportunities to automate-all-the-things, fix and enhance your slow
 and fragile pipelines, and work on interesting problems. I have a diverse
 development background and have worked several jobs spanning frontend web
 development to site reliability engineering. Currently considering opportunities
@@ -21,12 +21,36 @@ B.S. Computer Science at [California State University - Sacramento](https://www.
 
 ##### Skills
 
-For coding I primarily work with Python but I read/tweak a number of others like
-Go, Java, PHP, Javascript, and shell scripting. Proficient managing kubernetes
-clusters in AWS and other services like EC2, RDS, etc. Deploying services with a
-number of tools like atlantis, terraform, helm, ansible, argo cd.
+My current day-to-day coding is done with Python and some bash scripting as needed.
+You will often find me writing and updating Ansible playbooks and roles, and 
+orchestrating them as needed. (Yes, orchestrating, or thinking about "how do
+these all fit together" and how will they happily run.) Next to my Ansible configs
+you'll find Packer configs.
+
+I'm a GNU/Linux sysadmin and love working it in and making sure it's all running
+as smooth as possible. I'll focus on SRE or DevOps as needed and have had dedicated roles
+in the past. They're all so closely intermingled at this point and I believe they all share
+a more-or-less similar base of experience.
+
+I care less about particular hosting platforms and more about
+how the infrastructure comes together to provide developers or users the platforms
+and services they need to get their jobs done.
 
 ## Recent Experience
+
+### HPC Linux Systems Administrator @ [NREL](https://www.nrel.gov/hpc/) (April 2023 - Present)
+
+- Maintain hypervisors and Openstack infrastructure for Yampa and Vermillion HPC systems.
+- Perform onsite maintenance in the datacenter to configure host networking, troubleshoot issues, etc.
+- Deploy and maintain our Ansible services and configurations.
+- Work alongside cybersecurity to ensure system configurations meet security requirements.
+
+### DevOps Engineer @ [Stateless](https://stateless.net) (May 2022 - April 2023)
+
+Another startup attempt, another startup downsizing post-COVID.
+
+- Ingegrated distributed storage into clusters to provide data resilience.
+- Wrote and maintained Ansible configurations for test infrastructure.
 
 ### Site Reliability Engineer @ [Automox](https://www.automox.com) (Apr 2021 - Apr 2022)
 
