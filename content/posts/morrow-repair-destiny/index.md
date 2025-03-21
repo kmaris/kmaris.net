@@ -8,7 +8,7 @@ Rebuilt, Wyrmhaven, Beware the Sixth House, etc. In my case I installed a mod,
 _on a fresh character!_, that changed buildings (Beautiful Cities of Morrowind).
 Upon entering the Ald Skar Inn, whom do I find? Nobody. Nada. Bupkiss.
 
-Weird, I thought. It was at the momentary epiphany that I started falling.
+Weird, I thought. It was at the momentary epiphany that I started falling through the ground.
 And FAST. And PASSING other unforunates.
 
 Oh hey, it's all of the inn dwellers and we're racing to oblivion. And lo and
@@ -24,14 +24,14 @@ I also never saw the other clear signal you're screwed:
 > saved game to restore the weave of fate, or persist in the doomed world you
 > have created."
 
-"That sucks!", "WHAT THE FUCK", "How did that happen?", "Sigghhhh.....".
+"That sucks!", "WAIT! WHAT??", "How did that happen?", "Sigghhhh.....".
 Surprise, confusion, grief, acceptance. One might call these the seven
 (okay not seven) stages of playing Morrowind.
 
 ### Lets fix it
 
-Alright, you don't want to start a new character and all the snappy bitches on
-reddit that tell you to do so can fuxk off. You'll need a hex editor (I use HxD
+Alright, you don't want to start a new character and all the short-tempered
+redditors that tell you to do so are not helping matters. You'll need a hex editor (I use HxD
 on windows) so get that or something similar if you don't have it. Also this is
 for OpenMW. If you're still playing OG morrowind, switch over. You'll be happier
 for it. You'll need to be able to use the console by pressing the \~ key
@@ -104,6 +104,13 @@ Set that 2 to 0 (zero), underlined in red.
 Save the file and try playing your game! If all goes well Caius won't be pissed
 at you anymore. If it fails to load (expecting different numbers) then you
 edited the wrong thing.
+
+### Disclaimer
+
+They're always at the bottom, and here's mine: this worked for me
+but there are going to be variations between NPC's. Just take your time,
+make backups of your save and don't be afraid to experiment and play with
+the numbers.
 
 ## References
 
